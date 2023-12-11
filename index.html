@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/Styles/style.css" />
+    <link rel="stylesheet" href="assets/Styles/todoList.css" />
+    <link rel="stylesheet" href="assets/Styles/time&weather.css" />
+    <link rel="stylesheet" href="assets/Styles/search.css" />
+    <link rel="stylesheet" href="assets/Styles/apps.css" />
+    <link rel="stylesheet" href="assets/Styles/responsive.css" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+
+<body>
+    <div class="container d-grid">
+        <section class="weather-time">
+            <div class="weather d-flex align-center direction-column"></div>
+            <div class="time d-flex align-center direction-column"></div>
+        </section>
+
+        <section class="google d-flex direction-rtl">
+            <form class="d-flex justify-between">
+                <div class="d-flex align-center direction-row-reverse">
+                    <input type="text" id="googleSearch" placeholder="جستجو در گوگل" />
+                    <img src="assets/Images/google-icon.png">
+                </div>
+                <button class="btn submit"><i class='bx bx-search'></i></button>
+            </form>
+        </section>
+
+        <section class="todo">
+            <h2>دست نویس</h2>
+            <ul id="tasks" class="d-flex direction-column-reverse"></ul>
+            <div class="addTask">
+                <form action="" id="form-todo" class="justify-between direction-row-reverse">
+                    <input class="direction-rtl" type="text" id="newTask" placeholder="نوشتن تسک جدید" />
+                    <button class="btn submit-task direction-rtl">+</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="app d-grid direction-rtl">
+            <a class="box" href="index.html"><i class="damedasti "></i></a>
+            <a class="box" href="index.html"><i class='shab'></i></a>
+        </section>
+    </div>
+
+</body>
+
+<script src="assets/Scripts/task.js "></script>
+<script src="assets/Scripts/time.js "></script>
+<script src="assets/Scripts/app.js "></script>
+<script src="assets/Scripts/weather.js "></script>
+
+</html>

@@ -1,0 +1,42 @@
+.google {
+    background-color: var(--primary-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    position: relative;
+}
+
+.google button,
+.google input {
+    border: none;
+    background-color: transparent;
+}
+
+::placeholder {
+    font-family: vazirmatn;
+}
+
+.google button {
+    background-color: #3d518f;
+    color: white;
+    font-size: 1.1rem;
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    width: 3rem;
+}
+
+.google form {
+    background-color: #f3f4f6;
+    width: 90%;
+    border: none;
+    border-radius: var(--radius-lg);
+    padding: var(--space-md);
+    margin: 0 auto;
+}
+
+.google form>div {
+    gap: var(--space-lg);
+}
+
+.google form img {
+    width: 1rem;
+}

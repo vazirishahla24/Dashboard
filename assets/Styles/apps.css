@@ -1,0 +1,32 @@
+    .app {
+        grid-area: 2/2/4/3;
+        grid-template-columns: repeat(6, 1fr);
+        gap: var(--space-lg);
+    }
+    
+    .app>a {
+        color: gray;
+        display: block;
+        background-color: white;
+        border-radius: var(--radius-md);
+        padding: 50%;
+        position: relative;
+    }
+    
+    .app .box i {
+        font-size: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .damedasti {
+        content: url("../Images/damedasti.png");
+        height: 70%;
+    }
+    
+    .shab {
+        content: url("../Images/shab.png");
+        height: 70%;
+    }

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: vazirmatn;
+    src: url(../Fonts/Vazirmatn-VariableFont_wght.ttf);
+}
+
+:root {
+    --sky: #C4DEF7;
+    --primary-color: #ffffff;
+    --light-gray: rgb(230, 230, 230);
+    --spacing-unit: 2px;
+    --space-sm: calc(2 * var(--spacing-unit));
+    --space-md: calc(4 * var(--spacing-unit));
+    --space-lg: calc(8 * var(--spacing-unit));
+    --radius-unit: 4px;
+    --radius-sm: calc(2 * var(--radius-unit));
+    --radius-md: calc(4 * var(--radius-unit));
+    --radius-lg: calc(8 * var(--radius-unit));
+    --gray-line: solid 1px rgb(220, 220, 220);
+}
+
+
+/* ----------------------------------------------------------------- */
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+.d-grid {
+    display: grid;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.direction-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.direction-row {
+    flex-direction: row;
+}
+
+.direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.direction-rtl {
+    direction: rtl;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+body {
+    background-color: var(--sky);
+    font-family: vazirmatn;
+}
+
+.container {
+    max-width: 1124px;
+    padding: var(--space-lg);
+    margin: 80px auto;
+    align-items: start;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: var(--space-lg);
+}
+
+.container>section {
+    border-radius: var(--radius-md);
+}
